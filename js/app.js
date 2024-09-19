@@ -11,7 +11,7 @@ document.getElementById('task-form').addEventListener('submit', function(e) {
 });
 
 function addTaskToList(task) {
-    const taskList = document.getElementById('TaskList');
+    const taskList = document.getElementById('task-list');
 
     const li = document.createElement('li');
     li.className = 'list-group-item d-flex justify-content-between align-items-center';
@@ -28,4 +28,3 @@ deleteBtn.addEventListener('click', function() {
 
 li.appendChild(deleteBtn);
 taskList.appendChild(li);
-}
